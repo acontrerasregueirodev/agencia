@@ -19,18 +19,36 @@ body {
     /* Color de fondo del banner */
     color: white;
     /* Color del texto */
-    padding: 10px;
-    /* Reduce el padding para un banner más pequeño */
+    padding: 20px;
+    /* Ajusta el padding según sea necesario */
     text-align: center;
     /* Centrar el texto */
-    height: 60px;
-    /* Ajusta la altura del banner */
+    height: auto;
+    /* Permite que el alto se ajuste al contenido */
     display: flex;
     /* Utiliza Flexbox para centrar contenido */
     align-items: center;
     /* Centrar verticalmente */
     justify-content: center;
     /* Centrar horizontalmente */
+    width: 100%;
+    /* Ocupa el 100% del ancho de la ventana */
+    margin: 0;
+    /* Elimina el margen */
+}
+
+.banner h1 {
+    font-size: 18px;
+    /* Ajusta el tamaño del texto del título */
+    margin: 0;
+    /* Elimina el margen */
+}
+
+.banner p {
+    font-size: 14px;
+    /* Ajusta el tamaño del texto del párrafo */
+    margin: 0;
+    /* Elimina el margen */
 }
 
 /* Footer */
