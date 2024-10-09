@@ -1,0 +1,32 @@
+# Ignorar el entorno virtual
+entorno_virtual/
+
+# Ignorar archivos de Python compilados
+*.pyc
+__pycache__/
+
+# Ignorar la base de datos SQLite (si la usas)
+db.sqlite3
+
+# Ignorar archivos de configuración de entorno
+*.env
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos de traducción
+*.pot
+*.mo
+
+# Ignorar archivos de migración
+migrations/
+
+# Ignorar archivos de medios y estáticos
+media/
+staticfiles/
+
+# Ignorar archivos de configuración de IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
