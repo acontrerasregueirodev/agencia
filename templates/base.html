@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'administracion/login.css' %}"
+    />
+    <title>Agencia</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      .full-height {
+        height: 100vh; /* Altura de la ventana */
+        display: flex;
+        flex-direction: column;
+      }
+      .content {
+        flex: 1; /* Ocupa el espacio disponible */
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Centra el contenido */
+      }
+    </style>
+  </head>
+  <body class="full-height">
+    {% include 'banner.html' %}
+    <div
+      class="container d-flex justify-content-center align-items-center flex-grow-1"
+    >
+      {% block content %} {% endblock %}
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>

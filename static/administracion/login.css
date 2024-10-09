@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa;
+    /* Fondo claro */
+}
+
+.login-container {
+    margin: 20px;
+    /* Espacio desde los bordes */
+    max-width: 400px;
+    /* Ancho máximo del formulario */
+    padding: 20px;
+    /* Espaciado interno */
+    background-color: white;
+    /* Fondo blanco para el formulario */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+h1 {
+    text-align: center;
+    /* Centrar el título */
+    margin-bottom: 20px;
+    /* Espacio inferior */
+}
+
+.form-label {
+    margin-top: 10px;
+    /* Espacio superior */
+}
+
+.form-control {
+    margin-bottom: 20px;
+    /* Espacio inferior para inputs */
+}

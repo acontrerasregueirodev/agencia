@@ -1,0 +1,46 @@
+/* styles.css */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+    /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    /* Apila elementos verticalmente */
+}
+
+.banner {
+    background-color: #007bff;
+    /* Color de fondo del banner */
+    color: white;
+    /* Color del texto */
+    padding: 10px;
+    /* Reduce el padding para un banner más pequeño */
+    text-align: center;
+    /* Centrar el texto */
+    height: 60px;
+    /* Ajusta la altura del banner */
+    display: flex;
+    /* Utiliza Flexbox para centrar contenido */
+    align-items: center;
+    /* Centrar verticalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    /* Mueve el footer hacia abajo */
+    background-color: #f8f9fa;
+    /* Color de fondo del footer */
+    padding: 10px 0;
+    /* Padding del footer */
+    text-align: center;
+    /* Centrar el texto del footer */
+}
