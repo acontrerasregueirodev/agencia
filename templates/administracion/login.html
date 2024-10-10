@@ -1,26 +1,48 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 <div class="login-container">
   <h1>Inicio de sesión</h1>
+
+  {% if messages %}
+  <div class="alert alert-info" role="alert">
+    {% for message in messages %} {{ message }}<br />
+    {% endfor %}
+  </div>
+  {% endif %}
+
   <form method="post">
     {% csrf_token %}
     <div class="form-group">
-      <label for="username" class="form-label">Usuario</label>
+      <label for="username" class="form-label">Nombre de usuario</label>
       <input
         type="text"
         class="form-control"
         id="username"
         name="username"
-        required
+        <!--
+        Asegúrate
+        de
+        que
+        el
+        nombre
+        coincida
+        --
       />
     </div>
     <div class="form-group">
-      <label for="password" class="form-label">Contraseña</label>
+      <label for="contraseña" class="form-label">Contraseña</label>
       <input
         type="password"
         class="form-control"
-        id="password"
-        name="password"
-        required
+        id="contraseña"
+        name="contraseña"
+        <!--
+        Asegúrate
+        de
+        que
+        el
+        nombre
+        coincida
+        --
       />
     </div>
     <button type="submit" class="btn btn-primary btn-block">
@@ -28,6 +50,7 @@
     </button>
   </form>
 </div>
+
 <link
   rel="stylesheet"
   type="text/css"

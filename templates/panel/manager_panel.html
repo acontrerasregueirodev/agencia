@@ -1,0 +1,20 @@
+<!-- panel/templates/panel/manager_panel.html -->
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="manager-panel-container">
+  <h1>Panel de Manager</h1>
+
+  {% if messages %}
+  <div class="alert alert-success" role="alert">
+    {% for message in messages %} {{ message }} {% endfor %}
+  </div>
+  {% endif %}
+
+  <p>Aquí puedes gestionar tus tareas y actividades como manager.</p>
+</div>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'panel/manager_panel.css' %}"
+/>
+{% endblock %}

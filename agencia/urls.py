@@ -17,9 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from administracion.views import login_view
+from panel.views import admin_panel, manager_panel
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', login_view,name = 'login'),  # Redirigir a la app de administracion
+    path('', login_view,name = 'login'),  # Redirigir a la app de login
+    path('panel/', include('panel.urls')),  # Incluir las URLs de la app panel
+    path('admin_panel/',admin_panel, name='admin_panel'),  # Define esta vista
+    path('manager_panel/',manager_panel, name='managers_panel'),  # Define esta vista
 ]
 
